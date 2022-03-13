@@ -13,6 +13,27 @@
 		<welcome-file>default.htm</welcome-file>
 	</welcome-file-list>
 
+<!-- Servlet Context Example - start -->
+	<context-param>
+		<param-name>website</param-name>
+		<param-value>programierung.com</param-value>
+	</context-param>
+	<context-param>
+		<param-name>emailadress</param-name>
+		<param-value>hasan@gmail.com</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>ServletContextClass</servlet-name>
+		<servlet-class>servlet.context.example.ServletContextClass</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletContextClass</servlet-name>
+		<url-pattern>/ServletContextClass</url-pattern>
+	</servlet-mapping>
+<!-- Servlet Context Example - finish -->		
+
 	<servlet>
 		<servlet-name>FirstServlet</servlet-name>
 		<servlet-class>helloServlet.HelloServlet</servlet-class>
@@ -24,7 +45,7 @@
 	</servlet-mapping>
 
 
-<!-- Servlet Configuration -->
+	<!-- Servlet Configuration -->
 	<servlet>
 		<servlet-name>ServletConfigClass</servlet-name>
 		<servlet-class>servletConfig.ServletConfigClass</servlet-class>
